@@ -1,0 +1,546 @@
+body {
+	margin: 0px;
+	letter-spacing: 0.075em;
+}
+.wrapper {
+	font-family: Lato, "open sans";
+}
+p {
+	font-family: "Open Sans";
+	font-size: 14px;
+	line-height: 27px;
+}
+/*=============*/
+/*===TOP NAV===*/
+/*=============*/
+.top-nav {
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-lg {
+	display: none;
+}
+.top-nav-user-actions {
+	margin-top: 2px;
+}
+.top-bar-links {
+	display: none;
+}
+.top-nav-user-actions:last-child {
+	margin-right: 20px;
+}
+.contact-account-container {
+	display: flex;
+}
+.contact-account-buttons {
+	width: 55px;
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact-account-buttons span,
+.hamburger-icon span {
+	font-size: 11px !important;
+	color: #666;
+	margin-top: 3px;
+	font-size: small;
+}
+/*XS - SM TOP NAV*/
+.top-nav-user-actions {
+	display: flex;
+	align-items: center;
+}
+#hamburger-dropdown {
+	padding: 0px;
+	list-style: none;
+	text-align: right;
+}
+#hamburger-dropdown li {
+	margin-top: 10px;
+}
+#hamburger-dropdown li a {
+	text-decoration: none;
+}
+.hamburger-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2px;
+	margin-left: 20px;
+}
+.bar1, .bar2, .bar3 {
+    width: 18px;
+    height: 2px;
+    background-color: #247378;
+    margin: 3px 0px 0px 0px;
+    transition: 0.4s;
+}
+/*HAMBURGER ANIMATION*/
+/* Rotate first bar */
+.change .hamburger-container {
+	margin-left: 5px;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 2px) ;
+    transform: 	rotate(130deg) translate(7px, 0px);
+}
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-6px, -1px);
+}
+/*================*/
+/*===SEARCH NAV===*/
+/*================*/
+.search-nav-container {
+	
+}
+.search-nav-container div:first-child {
+	padding-right: 0px;
+}
+.search-nav-container div:nth-child(2) {
+	padding-left: 0px;
+}
+.search-input {
+	font-size: 14px;
+	color: #a9aaa9;
+	width: 100%;
+	padding: 12px 10px;
+	border: none;
+}
+.search-nav-container h3 {
+	display: none;
+}
+.search-nav {
+	background-color: #a9aaa9;
+	padding: 10px 0px;
+}
+.search-button {
+	background: url('../icons/search.svg') center;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	height: 41px;
+	width: 100%;
+	background-color: #247378;
+	border: none;
+}
+.search-button-text {
+	display: none;
+}
+/*==================*/
+/*===REALTOR INFO===*/
+/*==================*/
+.realtor-flex-container {
+	background-color: #eeeeef;
+	padding-bottom: 30px;	
+}
+/*.realtor-image {
+	width: 212px;
+}*/
+.realtor-info {
+	display: flex;
+	flex-direction: column;
+}
+.realtor-contact-info h1 {
+	margin: 16px 0px 4px 0px;
+	font-size: 40px;
+	font-weight: lighter;
+}
+.realtor-contact-info h5 {
+	margin: 0px;
+}
+.contact-button {
+	margin: 18px 0px;
+	padding: 9px 0px;
+	border: none;
+	width: 100%;
+	border-radius: 5px;
+	font-family: Lato, "open sans";
+	letter-spacing: 0.075em;
+	font-size: 18px;
+	font-weight: 300;
+	background-color: #247378;
+	color: white;
+}
+.social-media-icons {
+	display: flex;
+	justify-content: space-between;
+}
+.realtor-links {
+	margin-top: 33px;
+}
+.contact-links {
+	display: flex;
+	text-decoration: none;
+}
+.contact-link-icons {
+	width: 23px;
+	margin-right: 18px;
+}
+.contact-links h4 {
+	color: #257478;
+	margin: 15px 0px;
+	font-size: 15px;
+}
+/*===============*/
+/*===MAIN TEXT===*/
+/*===============*/
+.text-container {
+	margin-top: 40px;
+}
+.main-text p {
+	/*font-weight: lighter;*/
+}
+.text-header-dropdown-wrapper {
+	position: relative;
+}
+.text-header-dropdown {
+	width: 100%;
+	border-radius: 0px;
+	box-shadow: none;
+	border: 1px solid gray;
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+	color: #2398a7;
+	letter-spacing: 1px;
+	display: block;
+	padding: 10px;
+	-webkit-appearance: none; 
+	-webkit-border-radius: 0px;
+	-moz-appearance: none;
+	appearance: none; 
+}
+.text-header-dropdown-arrow {
+	pointer-events: none;
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	content: "";
+	display: block;
+	height: 7px;
+	width: 7px;
+	border: 2px solid grey;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg) translatey(-50%);
+}
+.text-contents-aside h4 {
+	font-weight: bolder;
+	margin: 15px 0px 7px 0px;
+}
+.text-contents-aside p {
+	margin: 9px 0px 28px 0px;
+}
+.realtor-tab-headings {
+	display: none;
+}
+/*============*/
+/*===FOOTER===*/
+/*============*/
+footer {
+	margin-top: 4px;
+	background-color: #2398a5;
+	color: white;
+	padding: 20px 0px;
+	font-size: 14px;
+	font-weight: lighter;
+}
+.footer-contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-contact img {
+	margin-right: 10px;
+}
+.footer-left,
+.footer-right {
+	text-align: center;
+}
+.footer-right-links span:nth-child(2) {
+	margin: 0px 20px;
+}
+.footer-left p:first-child {
+	margin-bottom: 13px;
+}
+.footer-left-icons {
+	display: flex;
+	justify-content: space-between;
+	margin: 25px 0px;
+}
+.footer-right-icons {
+	display: flex;
+	justify-content: center;
+}
+.footer-right-links a {
+	color: white;
+}
+.footer-right-icons img:first-child {
+	margin-right: 30px;
+}
+/*===================*/
+/*===MEDIA QUERIES===*/
+/*===================*/
+/*SMALL*/
+@media screen and (min-width: 768px) {
+	.container {
+		width: 755px;
+	}
+	/*TOP NAV*/
+	.logo-sm {
+		display: none;
+	}
+	.logo-lg {
+		display: block;
+	}
+	.top-nav {
+		height: 54px;
+	}
+	/*SEARCH NAV*/
+	.search-nav {
+		height: 61px;
+	}
+	.search-nav-container h3 {
+		display: block;
+		text-align: center;
+		text-decoration: underline;
+		font-size: 12px;
+		padding: 0px;
+	}
+	.search-nav-container h3 a {
+		color: white !important;
+	}
+	.search-nav-container div:first-child {
+		padding-right: 15px;
+	}
+	.search-nav-container div:nth-child(2) {
+		padding-left: 15px;
+	}
+	.search-button {
+		background-image: none;
+		background-size: 25px;
+		background-repeat: no-repeat;
+		height: 41px;
+		width: 100%;
+		border-radius: 3px;
+		background-color: #247378;
+		border: none;
+	}
+	.search-button-text {
+		display: block;
+		font-size: 18px;
+		letter-spacing: 1px;
+		font-weight: 100;
+		color: white;
+	}
+	/*REALTOR CONTAINER*/
+	.realtor-flex-container {
+		height: 217px;
+		padding: 0px;
+	}
+	.realtor-info {
+		height: 215px;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.realtor-image {
+		width: 157px;
+	}
+	.realtor-contact-info {
+		display: flex;
+		margin: 7px 0px;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.realtor-contact-info h1 {
+		margin: 0px;
+	}
+	.realtor-links {
+		margin: 7px 0px;
+	}
+	.text-container {
+		margin-top: 22px;
+	}
+	.text-header-dropdown-wrapper {
+		display: none;
+	}
+	.realtor-tab-headings {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 28px;
+	}	
+	.realtor-tab-headings a h3 {
+		margin-bottom: 10px;
+	}
+	.realtor-tab-headings a {
+		text-decoration: none;
+		color: #acacac;
+		border-bottom: 0.5px solid #eeeeee;
+		text-align: center;
+		width: 25%;
+	}
+	.realtor-tab-headings a:hover,
+	a.active {
+		color: #247378;
+		border-bottom: 2px solid #247378;
+	}
+	.social-media-icons {
+		margin-bottom: 12px;
+	}
+	/*MAIN TEXT*/
+	.main-text p {
+		margin-top: 0px;
+	}
+	.text-contents-aside h4 {
+		margin-top: 0px;
+	}
+	.text-contents-aside h4:last-of-type {
+		margin-top: 40px;
+	}
+	/*FOOTER*/
+	footer {
+		margin-top: 25px;
+		height: 151px;
+	}
+	.footer-left {
+		float: left;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.footer-left p {
+		margin-top: 7px;
+		margin-bottom: 0px;
+	}
+	.footer-left-icons {
+		margin-bottom: 0px;
+	}
+	.footer-left-icons img {
+		margin-right: 25px;
+	}
+	.footer-right {
+		font-size: 16px;
+		float: left;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	.footer-right-icons {
+		margin-top: 1px;
+	}
+}
+/*MEDIUM*/
+@media screen and (min-width: 1100px) {
+	.container {
+		width: 955px;
+	}
+	.top-nav-container {
+		width: 1040px;
+	}
+	.top-nav {
+		height: 100px;
+	}
+	.hamburger-icon {
+		display: none;
+	}
+	.top-bar-links {
+		margin-top: 10px;
+		display: flex;
+	}
+	.top-bar-links h3 {
+		font-size: 14px;
+		margin-left: 40px;
+		margin-bottom: 0px;
+	}
+	.top-bar-links h3 a {
+		color: black;
+		text-decoration: none;
+	}
+	.top-nav-user-actions {
+		display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+	}
+	.logo-lg {
+		width: 350px;
+	}
+	.realtor-flex-container {
+		height: 295px;
+	}
+	.realtor-image {
+		width: 215px;
+		padding-left: 0px;
+	}
+	.contact-button {
+		margin-top: 20px;
+	}
+	.realtor-info {
+		height: 295px;
+	}
+	.realtor-contact-info h1 {
+		font-size: 37px;
+		margin-bottom: 10px;
+	}
+	.realtor-contact-info,
+	.realtor-links {
+		padding: 40px 0px;
+	}
+	.realtor-links a h4 {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.realtor-tab-headings {
+		margin-bottom: 56px
+	}
+	.text-container {
+		margin-top: 35px;
+	}
+}
+/*LARGE*/
+@media screen and (min-width: 1400px) {
+	.container {
+		width: 1150px;
+	}
+	.search-nav {
+		height: 62px;
+	}
+	.top-nav-container {
+		width: 1335px;
+	}
+	.search-nav-container h3 {
+		font-size: 15px;
+	}
+	.realtor-flex-container {
+		height: 360px;
+	}
+	.realtor-links a h4 {
+		font-size: 18px;
+	}
+	.realtor-image {
+		width: 263px;
+	}
+	.realtor-info {
+		height: 360px;
+	}
+	.realtor-contact-info,
+	.realtor-links {
+		padding: 66px 0px;
+	}
+}
+
+
+
+
+
+
+
