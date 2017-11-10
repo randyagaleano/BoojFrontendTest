@@ -440,7 +440,7 @@ footer {
 /*MEDIUM*/
 @media screen and (min-width: 1100px) {
 	.container {
-		width: 955px;
+		width: 975px;
 	}
 	.top-nav-container {
 		width: 1040px;
@@ -456,13 +456,16 @@ footer {
 		display: flex;
 	}
 	.top-bar-links h3 {
-		font-size: 14px;
+		font-size: 15px;
 		margin-left: 40px;
 		margin-bottom: 0px;
 	}
 	.top-bar-links h3 a {
 		color: black;
 		text-decoration: none;
+	}
+	.search-nav-container h3 {
+		font-size: 15px;
 	}
 	.top-nav-user-actions {
 		display: flex;
@@ -493,6 +496,10 @@ footer {
 	.realtor-links {
 		padding: 40px 0px;
 	}
+	.realtor-contact-info {
+		padding-left: 15px;
+		padding-right: 15px;	
+	}
 	.realtor-links a h4 {
 		font-size: 16px;
 		margin-bottom: 10px;
@@ -513,7 +520,7 @@ footer {
 		height: 62px;
 	}
 	.top-nav-container {
-		width: 1335px;
+		width: 1370px;
 	}
 	.search-nav-container h3 {
 		font-size: 15px;
@@ -537,6 +544,9 @@ footer {
 	.realtor-contact-info {
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+	footer {
+		margin-top: 30px;
 	}
 }
 
