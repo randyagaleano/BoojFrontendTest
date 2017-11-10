@@ -140,10 +140,8 @@ p {
 .realtor-flex-container {
 	background-color: #eeeeef;
 	padding-bottom: 30px;	
+	box-shadow: inset 0px 8px 14px -11px
 }
-/*.realtor-image {
-	width: 212px;
-}*/
 .realtor-info {
 	display: flex;
 	flex-direction: column;
@@ -509,7 +507,7 @@ footer {
 /*LARGE*/
 @media screen and (min-width: 1400px) {
 	.container {
-		width: 1150px;
+		width: 1180px;
 	}
 	.search-nav {
 		height: 62px;
@@ -535,6 +533,10 @@ footer {
 	.realtor-contact-info,
 	.realtor-links {
 		padding: 66px 0px;
+	}
+	.realtor-contact-info {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 
